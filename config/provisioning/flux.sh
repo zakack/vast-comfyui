@@ -9,8 +9,8 @@
 DEFAULT_WORKFLOW="https://raw.githubusercontent.com/ai-dock/comfyui/main/config/workflows/flux-comfyui-example.json"
 
 APT_PACKAGES=(
-    #"package-1"
-    #"package-2"
+    nvtop
+    vim
 )
 
 PIP_PACKAGES=(
@@ -31,12 +31,14 @@ CLIP_MODELS=(
 )
 
 UNET_MODELS=(
+    "https://civitai.com/api/download/models/1067545"
 )
 
 VAE_MODELS=(
 )
 
 LORA_MODELS=(
+    "https://huggingface.co/zaksynack/flux-civit-nines/resolve/main/pytorch_lora_weights.safetensors"
 )
 
 ESRGAN_MODELS=(
