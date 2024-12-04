@@ -31,7 +31,7 @@ CLIP_MODELS=(
 )
 
 UNET_MODELS=(
-    "https://civitai.com/api/download/models/1067545"
+    "https://civitai.com/api/download/models/1085910"
 )
 
 VAE_MODELS=(
