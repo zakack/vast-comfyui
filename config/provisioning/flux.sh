@@ -29,6 +29,7 @@ NODES=(
     "miaoshouai/ComfyUI-Miaoshouai-Tagger"
     "ssitu/ComfyUI_UltimateSDUpscale"
     "crystian/ComfyUI-Crystools"
+    "Fannovel16/comfyui_controlnet_aux"
 )
 
 CHECKPOINT_MODELS=(
