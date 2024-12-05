@@ -11,6 +11,7 @@ DEFAULT_WORKFLOW="https://raw.githubusercontent.com/ai-dock/comfyui/main/config/
 APT_PACKAGES=(
     nvtop
     vim
+    libgl1-mesa-glx
 )
 
 PIP_PACKAGES=(
@@ -19,7 +20,15 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-    
+    "rgthree/rgthree-comfy"
+    "cubiq/ComfyUI_essentials"
+    "ltdrdata/ComfyUI-Impact-Pack"
+    "ltdrdata/ComfyUI-Inspire-Pack"
+    "kijai/ComfyUI-KJNodes"
+    "WASasquatch/was-node-suite-comfyui"
+    "miaoshouai/ComfyUI-Miaoshouai-Tagger"
+    "ssitu/ComfyUI_UltimateSDUpscale"
+    "crystian/ComfyUI-Crystools"
 )
 
 CHECKPOINT_MODELS=(
@@ -32,6 +41,8 @@ CLIP_MODELS=(
 
 UNET_MODELS=(
     "https://civitai.com/api/download/models/1085910"
+    "https://civitai.com/api/download/models/1085899"
+    "https://civitai.com/api/download/models/1067545"
 )
 
 VAE_MODELS=(
@@ -48,6 +59,9 @@ ESRGAN_MODELS=(
 )
 
 CONTROLNET_MODELS=(
+    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/blob/main/flux-canny-controlnet-v3.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/blob/main/flux-depth-controlnet-v3.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/blob/main/flux-hed-controlnet-v3.safetensors"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
