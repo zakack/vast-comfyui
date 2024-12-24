@@ -20,16 +20,16 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-    "rgthree/rgthree-comfy"
-    "cubiq/ComfyUI_essentials"
-    "ltdrdata/ComfyUI-Impact-Pack"
-    "ltdrdata/ComfyUI-Inspire-Pack"
-    "kijai/ComfyUI-KJNodes"
-    "WASasquatch/was-node-suite-comfyui"
-    "miaoshouai/ComfyUI-Miaoshouai-Tagger"
-    "ssitu/ComfyUI_UltimateSDUpscale"
-    "crystian/ComfyUI-Crystools"
-    "Fannovel16/comfyui_controlnet_aux"
+    "https://github.com/rgthree/rgthree-comfy"
+    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
+    "https://github.com/kijai/ComfyUI-KJNodes"
+    "https://github.com/WASasquatch/was-node-suite-comfyui"
+    "https://github.com/miaoshouai/ComfyUI-Miaoshouai-Tagger"
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+    "https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/Fannovel16/comfyui_controlnet_aux"
 )
 
 CHECKPOINT_MODELS=(
@@ -51,6 +51,7 @@ VAE_MODELS=(
 
 LORA_MODELS=(
     "https://huggingface.co/zaksynack/flux-civit-nines/resolve/main/pytorch_lora_weights.safetensors"
+    "https://civitai.com/api/download/models/1190027"
 )
 
 ESRGAN_MODELS=(
