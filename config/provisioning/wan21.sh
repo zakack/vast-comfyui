@@ -6,7 +6,7 @@
 
 # Packages are installed after nodes so we can fix them...
 
-DEFAULT_WORKFLOW="https://raw.githubusercontent.com/zakack/vast-comfyui/main/config/workflows/flux-no-controlnet.json"
+DEFAULT_WORKFLOW="https://raw.githubusercontent.com/zakack/vast-comfyui/main/config/workflows/wan21_vace.json"
 
 APT_PACKAGES=(
     nvtop
@@ -26,32 +26,46 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
     "https://github.com/kijai/ComfyUI-KJNodes"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
-    "https://github.com/miaoshouai/ComfyUI-Miaoshouai-Tagger"
     "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
     "https://github.com/crystian/ComfyUI-Crystools"
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/1038lab/ComfyUI-RMBG"
+    "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+    "https://github.com/kijai/ComfyUI-segment-anything-2"
+    "https://github.com/kijai/ComfyUI-DepthAnythingV2"
+    "https://github.com/pollockjj/ComfyUI-MultiGPU"
+    "https://github.com/M1kep/ComfyLiterals"
 )
 
 CHECKPOINT_MODELS=(
+    "https://huggingface.co/Kijai/PrecompiledWheels/resolve/main/flash_attn-2.7.4.post1-cp312-cp312-linux_x86_64.whl"
+    "https://huggingface.co/Kijai/PrecompiledWheels/resolve/main/sageattention-2.1.1-cp312-cp312-linux_x86_64.whl"
+    "https://huggingface.co/Kijai/PrecompiledWheels/resolve/main/triton-3.3.0-cp312-cp312-linux_x86_64.whl"
 )
 
 CLIP_MODELS=(
-    "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors"
-    "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp16.safetensors"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/open-clip-xlm-roberta-large-vit-huge-14_visual_fp16.safetensors"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/umt5-xxl-enc-bf16.safetensors"
+    "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors"
+    "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp16.safetensors"
 )
 
 UNET_MODELS=(
-    "https://civitai.com/api/download/models/1085910"
-    "https://civitai.com/api/download/models/1085899"
-    "https://civitai.com/api/download/models/1067545"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Skyreels/Wan2_1-SkyReels-V2-T2V-14B-720P_fp8_e5m2.safetensors"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-T2V-14B_fp8_e5m2.safetensors"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-VACE_module_14B_bf16.safetensors"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-I2V-14B-720P_fp8_e5m2.safetensors"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Skyreels/Wan2_1-SkyReels-V2-I2V-14B-720P_fp8_e5m2.safetensors"
 )
 
 VAE_MODELS=(
+    "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors"
 )
 
 LORA_MODELS=(
-    "https://huggingface.co/zaksynack/flux-civit-nines/resolve/main/pytorch_lora_weights.safetensors"
-    "https://civitai.com/api/download/models/1190027"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors"
+    "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors"
 )
 
 ESRGAN_MODELS=(
@@ -61,9 +75,7 @@ ESRGAN_MODELS=(
 )
 
 CONTROLNET_MODELS=(
-    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/blob/main/flux-canny-controlnet-v3.safetensors"
-    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/blob/main/flux-depth-controlnet-v3.safetensors"
-    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/blob/main/flux-hed-controlnet-v3.safetensors"
+    "https://huggingface.co/Kijai/DepthAnythingV2-safetensors/resolve/main/depth_anything_v2_vitl_fp16.safetensors"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
